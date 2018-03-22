@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="marsProject.js"></script>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		#pics {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;	
+		justify-content: space-between;		
+		}
+		#pics:after {
+			content: "";
+			flex: auto;
+			flex-wrap: wrap;
+		}
+
+	</style>
+	<div>
+		Sol date:
+		<input type="text" id="sol">
+		<div>
+		<!-- <button id="submitSolNumber">submit</button> -->
+		<!-- <button id="resetSolNumber">reset sol number</button> -->
+	</div>
+	<p>
+		types of cameras: <br>
+FHAZ--> Front Hazard Avoidance Camera <br>
+RHAZ-->	Rear Hazard Avoidance Camera <br>
+MAST-->	Mast Camera		<br>
+CHEMCAM-->  Chemistry and Camera Complex <br>		
+MAHLI-->	Mars Hand Lens Imager	<br>
+MARDI-->	Mars Descent Imager	<br>
+NAVCAM-->	Navigation Camera <br>
+</p>
+	<div>
+		<!-- going to be used for picking what camera -->
+		input which camera:
+		<input type="text" id="camera"> 
+
+	</div>
+	<div>
+		<button id="submitCamera">submit</button>
+		<!-- <button id="resetCamera">reset camera</button> <br> <br> -->
+	</div>
+	<div>
+		<button id="getData">get data</button>
+	</div>
+	<div>
+		<button id="clearPics">clear pics</button>
+	</div>
+	<br>
+	<div id='bigPic'></div>
+	<div id="pics">
+		
+	</div>
+	<div>
+		<p>-----------------------------------------------------------------</p> <br>
+
+		output all pics taken this date:<input type="text" id="justSol"> 
+		<button id="submitJustSol">submit</button>
+		<p>
+			types of cameras: 
+			<div id="cameraURL">
+			</div>
+		</p>
+
+	</div>
+</body>
+</html>
