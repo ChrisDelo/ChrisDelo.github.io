@@ -83,10 +83,10 @@ $(document).ready(function(){
 			 	//going to put in an alert if the data type is not an int
 
 		})
-		$('#submitJustSol').click(function(){
-			console.log("only sol:"+onlySol);
-			var solOnlyNasaAPI="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ";
-		});
+		// $('#submitJustSol').click(function(){
+		// 	console.log("only sol:"+onlySol);
+		// 	var solOnlyNasaAPI="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ";
+		// });
 		var urlArray = ["https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=FHAZ&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
 					"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=RHAZ&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
 					"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MAST&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
@@ -111,7 +111,7 @@ $(document).ready(function(){
 			console.log(urlArray[i])
 		}
 
-		setAllButtonClicks(buttons, urlArray);
+		//setAllButtonClicks(buttons, urlArray);
 
 		// $('#'+cams[0]+'1').click(function(){
 		// 	console.log(this);
@@ -140,17 +140,17 @@ $(document).ready(function(){
 		// 	});
 		// });
 
-		function setAllButtonClicks(buttonArr, urlArr){
-			console.log('boo');
-			console.log(buttonArr, urlArr)
-			onlySol = 123;
-			var urlArray = ["https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=FHAZ&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
-				"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=RHAZ&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
-				"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MAST&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
-				"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=CHEMCAM&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
-				"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MAHLI&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
-				"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MARDI&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
-				"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=NAVCAM&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ"];
+		// function setAllButtonClicks(buttonArr, urlArr){
+		// 	console.log('boo');
+		// 	console.log(buttonArr, urlArr)
+		// 	onlySol = 123;
+		// 	var urlArray = ["https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=FHAZ&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
+		// 		"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=RHAZ&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
+		// 		"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MAST&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
+		// 		"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=CHEMCAM&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
+		// 		"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MAHLI&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
+		// 		"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=MARDI&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ",
+		// 		"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=NAVCAM&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ"];
 			// for(var e = 0; e < buttonArr.length; e++){
 			// 	console.log(urlArray[e])
 			// 	buttonArr[e].click(function(){
@@ -180,16 +180,16 @@ $(document).ready(function(){
 			// 		});
 			// 	})
 			// }
-			var buttArr = buttonArr;
-			var urlArr = urlArr;
-			console.log(buttArr, urlArr);
-			for (var e =  0; e < buttArr.length; i++){
-				$('#'+cams[e]+'1').click(function(){
-					console.log(this);
+		// 	var buttArr = buttonArr;
+		// 	var urlArr = urlArr;
+		// 	console.log(buttArr, urlArr);
+		// 	for (var e =  0; e < buttArr.length; i++){
+		// 		$('#'+cams[e]+'1').click(function(){
+		// 			console.log(this);
 					
-				});
-			}
-		}
+		// 		});
+		// 	}
+		// }
 
 	
 		console.log(urlArray[1]);
