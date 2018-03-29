@@ -1,6 +1,7 @@
 body {
-    background-image: url("http://www.dq995.com/data/out/13/820452.jpg");
+    background-image: url("./backgroundimg.jpg");
     color: white; 
+    font-family: "Arial", Times, serif;
     
 }
 
@@ -18,14 +19,29 @@ body {
 .pic1 {
 	
 	position: absolute;
-    left: 85%;
-    top: 1%;
+    left: 82.85%;
+    top: 7%;
     z-index: 2;
 
 }
 .pic2 {
 	position: absolute;
-    left: 85%;
-    top: 1%;
+    left: 80%;
+    top: 3%;
     z-index: 1;
+}
+.name1{
+	position: absolute;
+    left: 83.9%;
+    top: 27.5%;
+    z-index: 3;
+     font-weight:;
+      font-size: 25px;
+}
+.name2{
+	position: absolute;
+    left: 83%;
+    top: 32%;
+    z-index: 10;
+     font-weight:;
 }
