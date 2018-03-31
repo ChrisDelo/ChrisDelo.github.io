@@ -1,6 +1,7 @@
 body {
-    background-image: url("./background.jpg");
+    background-image: url("./newbackground.jpg");
     color:white; 
+    font-family: "Arial", Times, serif;
     
 }
 .main {
@@ -13,14 +14,36 @@ body {
 }
 
 .c {
-	position: fixed; 
-	bottom: 0; 
-	width:100%; 
-	text-align: center;
+	position: absolute;
+	left: 45%;
+    top: 90%;
+	z-index: 3;
 
 }
 
 .href {
 	color: white;
+	position: absolute;
+    left: 40%;
+    top: -15%;
+}
+.back {
+	position: absolute;
+    left: -4%;
+    top: -25%;
+    z-index: -1;
+}
+.info{
+position: absolute;
+    left: 550px;
+    top: 0%;
+     font-weight: 25;
+    z-index: -1;
+}
+.infobackground {
+	position: absolute;
+    left: 550px;
+    top: 0%;
+    z-index: -1;
 
 }
