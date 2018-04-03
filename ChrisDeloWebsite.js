@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	var nasaAPI = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1&camera=fhaz&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ"; 
 
@@ -96,12 +97,7 @@ $(document).ready(function(){
 					"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol="+onlySol+"&camera=NAVCAM&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ"];
 		
 		var cams = ["fhaz", "rhaz", "mast", "chemcam", "mahli", "mardi", "navcam"];
-		if(urlArray.length ==cams.length){
-			console.log("url and cams length is good");
-		}  
-		else{
-			console.log("url and cams length is bad")
-		}
+		
 		var buttons = []
 		for(var i = 0; i < urlArray.length; i++){
 			console.log(cams)

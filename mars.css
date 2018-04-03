@@ -1,31 +1,29 @@
 body {
     background-image: url("./newbackground.jpg");
     color:white; 
-    font-family: "Arial", Times, serif;
-    
+    font-family: "Arial", Times, serif; 
 }
 .main {
 	 font-family: sans-serif;
     width:85%;
     margin:auto;
     color:white;
-    
     padding: 15px;
 }
 
 .c {
-	position: absolute;
+	/*position: absolute;
 	left: 45%;
-    top: 90%;
+    top: 90%;*/
+    display: flex;
+     justify-content: center;
 	z-index: 3;
-
 }
 
 .href {
 	color: white;
 	position: absolute;
-    left: 40%;
-    top: -15%;
+   
 }
 .back {
 	position: absolute;
@@ -33,12 +31,16 @@ body {
     top: -25%;
     z-index: -1;
 }
-.info{
+.beta {
+	  display: flex;
+     justify-content: center;
+}
+/*.info {
 position: absolute;
     left: 550px;
     top: 0%;
      font-weight: 25;
-   /*  work on */
+ 
     z-index: -1;
 }
 .infobackground {
@@ -46,5 +48,4 @@ position: absolute;
     left: 550px;
     top: 0%;
     z-index: -1;
-
-}
+}*/
