@@ -5,23 +5,23 @@
 <h3>***You will need to allow this website to know your location. You will be prompted when you click the button*** </h3>
 <p>Click the button to get your coordinates.</p>
 
-<button onclick="getLocation()">Try It</button>
+<button onclick="getLocation()">click here</button>
 <script src="time.js"></script>
 <p id="demo"></p>
 
 <script>
-var x = document.getElementById("demo");
+var j = document.getElementById("demo");
 
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        j.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    j.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 }
 </script>
