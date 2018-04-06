@@ -27,6 +27,10 @@ $(document).ready(function(){
 	console.log(url);
 	$("#submit").click(function(){
 		url = "https://api.nasa.gov/planetary/earth/imagery?lon="+lon+"&lat="+lat+"&dim="+size+"&date="+date+"&cloud_score=True&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ" //add stuff
-		console.log(url)
+		console.log("url:"+url)
+		$.getJSON("https://api.nasa.gov/planetary/earth/imagery?lon="+lon+"&lat="+lat+"&dim="+size+"&date="+date+"&cloud_score=True&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ", function(data){
+		console.log("data:"+data.length)
+		})
+
 	})
 })
