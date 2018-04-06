@@ -4,6 +4,7 @@ $(document).ready(function(){
 	var lon = 0;
 	var size = 0;
 	var date = 0;
+	var url = "";
 
 
 	$("#lat").keyup(function(){
@@ -22,5 +23,10 @@ $(document).ready(function(){
 		 date = $("#date").val();
 		 console.log("date:"+date);
 	})
-	var url = "https://api.nasa.gov/planetary/earth/imagery?lon=&lat=&date=&cloud_score=True&api_key=DEMO_KEY" //add stuff
+	
+	console.log(url);
+	$("#submit").click(function(){
+		url = "https://api.nasa.gov/planetary/earth/imagery?lon="+lon+"&lat="+lat+"&dim="+size+"&date="+date+"&cloud_score=True&api_key=lVCrmISPpppZ2vtFgZAgrRfotnPrNmncgCfN01jQ" //add stuff
+		console.log(url)
+	})
 })
