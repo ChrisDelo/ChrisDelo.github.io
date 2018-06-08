@@ -3,7 +3,11 @@ body {
     font-family: "Arial", Times, serif;
     color: white;
 }
-
+.name1 {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 25px;
+}
 .href {
 	color: white;
 
@@ -16,43 +20,67 @@ body {
 
 }
 .all {
-	position: absolute;
-    left: 80%;
-    top: 6%;
-    z-index: 2;
+
+    background-color: lightblue;
+    width: 100%;
+    height: 150px;
+}
+.all2 {
+   
 }
 .pic1 {
 	
-	position: absolute;
-    left: 38.5px;
-    top: 25px;
+
+    padding-left: ;
+    padding-top: ;
     z-index: 2;
 
 }
-.pic2 {
-	position: absolute;
-    left: ;
-    top: ;
-    z-index: 1;
+.contactme {
+   background-color: lightblue;
+   float: center;
+   width: 150px;
+
+
 }
-.name1-1{
-	position: absolute;
-    left: 40px;
-    top: 175px;
+.contact {
+      
+   padding-left: 85%;
+}
+.contactme2 {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+
+/*.name1 {
+    padding-left: 1190px;
+    padding-top: 20px ;
+    margin: 0px; 
+    font-size: 30px;
+}*/
+/*.name1-2{
+    padding-left: 225px;
+    padding-top: -100px;
     z-index: 3;
       font-size: 30px;
-}
-.name1-2{
-		position: absolute;
-    left: 122px;
-    top: 175px;
-    z-index: 3;
-      font-size: 30px;
-}
-.name2{
+}*/
+/*.name2{
 	position: absolute;
-    left: 83px;
-    top: 210px;
+    padding-left: 1200px;
+    padding-top: 2px;
     z-index: 10;
      font-weight:;
+}*/
+.projects {
+    position: absolute;
+    top: 350px;
 }
+ .logos1 {
+    padding-right: 25px;
+
+ }
+ .logos2 {
+    padding-left: 75px;
+
+ }
